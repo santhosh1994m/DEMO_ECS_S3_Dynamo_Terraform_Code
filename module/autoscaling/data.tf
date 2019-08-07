@@ -19,6 +19,6 @@ owners = ["591542846629"]
 data "template_file" "ecs-cluster" {
   template = "${file("ecs-cluster.tpl")}"
   vars =  {
-    ecs_cluster = "${var.ecs_cluster}"
+   sudo ecs_cluster = "${var.ecs_cluster}"
   }
 }
