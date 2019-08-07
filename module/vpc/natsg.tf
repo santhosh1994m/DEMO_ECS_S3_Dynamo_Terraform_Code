@@ -6,7 +6,7 @@ ingress {
 from_port = 80
 to_port = 80
 protocol = "tcp"
-cidr_blocks = ["${var.public_subnet_cidr}"]
+cidr_blocks = ["0.0.0.0/0"]
  }
 ingress {
 from_port = 443
