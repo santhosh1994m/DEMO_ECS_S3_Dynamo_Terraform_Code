@@ -17,7 +17,7 @@ owners = ["591542846629"]
 }
 # User data for ECS cluster
 data "template_file" "ecs-cluster" {
-  template = "${file("${path.module}/ecs-cluster.tpl")}"
+  template = file("${path.module}/ecs-cluster.tpl")
   vars =  {
    ecs_cluster = "${var.ecs_cluster}"
   }
