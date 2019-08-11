@@ -8,8 +8,8 @@ family = "test-family"
 container_definitions = <<DEFINITION
  [
     {
-       "name": "nginx",
-       "image": "nginx:latest",
+       "name": "tricon",
+       "image": "santhosh1994m/sanrepo:tricon",
        "memory": 500 ,
        "cpu": 500,
        "essential": true,
