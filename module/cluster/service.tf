@@ -8,7 +8,7 @@ iam_role = "${aws_iam_role.ecs-service-role.name}"
 
 load_balancer {
 target_group_arn = "${var.target_group_arn}"
-container_name = "nginx"
-container_port = "80"
+container_name = "tricon"
+container_port = "8080"
 }
 }
