@@ -11,5 +11,5 @@ variable "subnet_id_private" {}
 
 variable "ecs_key_pair_name" {
   description = "EC2 instance key pair name"
-  default = "santhosh-key-ecs"
+  default = "santhosh-test-key"
 }
