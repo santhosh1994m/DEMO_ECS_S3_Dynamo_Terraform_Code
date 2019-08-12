@@ -9,15 +9,15 @@ container_definitions = <<DEFINITION
  [
     {
        "name": "tricon",
-       "image": "santhosh1994m/sanrepo:tricon",
+       "image": "santhosh1994m/sanrepo",
        "memory": 500 ,
        "cpu": 500,
        "essential": true,
        "memoryReservation": 500,
        "portMappings":[
        {
-       "hostPort": 80,
-       "containerPort": 80,
+       "hostPort": 8080,
+       "containerPort": 8080,
        "protocol": "tcp"
         }
     ]
