@@ -9,7 +9,7 @@ container_definitions = <<DEFINITION
  [
     {
        "name": "tricon",
-       "image": "santhosh1994m/sanrepo",
+       "image": "santhosh1994m/sanrepo:tricon",
        "memory": 500 ,
        "cpu": 500,
        "essential": true,
