@@ -1,9 +1,6 @@
 provider "aws" {
   shared_credentials_file = "~/.aws/credentials"
   region = "us-west-2"
-
-
-
   }
 
 
@@ -19,8 +16,6 @@ source = ".//module/loadbalancer"
   public_securitygroup_id = "${module.vpc.public_securitygroup_id}"
   subnet_id_public = "${module.vpc.subnet_id_public}"
   subnet_id_private = "${module.vpc.subnet_id_private}"
-
-
 }
 
 
@@ -29,8 +24,6 @@ module "cluster" {
 source = ".//module/cluster"
 
 target_group_arn = "${module.loadbalancer.target_group_arn}"
-
-
 }
 
 
@@ -40,6 +33,4 @@ source = ".//module/autoscaling"
   subnet_id_public = "${module.vpc.subnet_id_public}"
   public_securitygroup_id = "${module.vpc.public_securitygroup_id}"
   subnet_id_private = "${module.vpc.subnet_id_private}"
-
-
 }
